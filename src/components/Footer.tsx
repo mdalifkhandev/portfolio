@@ -29,7 +29,6 @@ export function Footer() {
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
     { href: '#github', label: 'GitHub' },
-    { href: '#leetcode', label: 'Leetcode' },
     { href: '#experience', label: 'Experience' },
     { href: '#education', label: 'Education' },
     { href: '#contact', label: 'Contact' },

@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import { Link } from './Link';
 import { useTheme } from '../hooks/useTheme';
 import { ThemeToggle } from './ui/ThemeToggle';
 import { useAnimatedLogo } from '../hooks/useAnimatedLogo';
-// import { LoadingScreen } from './loading/LoadingScreen';
 import { motion } from 'framer-motion';
 
 
@@ -47,7 +46,6 @@ export function Navbar() {
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
     { href: '#github', label: 'GitHub' },
-    { href: '#leetcode', label: 'Leetcode' },
     { href: '#experience', label: 'Experience' },
     { href: '#education', label: 'Education' },
   ];
