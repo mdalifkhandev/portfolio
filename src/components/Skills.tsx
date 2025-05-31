@@ -1,5 +1,5 @@
 import { SectionTitle } from './ui/SectionTitle';
-import { SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiExpress, SiMongodb, SiNextdotjs, SiTypescript,  SiGit, SiGithub, SiVite, SiMongoose, SiMaterialdesign, SiAntdesign, SiDaisyui, SiBootstrap, SiRedux, SiFigma, SiSocketdotio, SiWebrtc } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiExpress, SiMongodb, SiNextdotjs, SiTypescript,  SiGit, SiGithub, SiVite, SiMongoose, SiMaterialdesign, SiAntdesign, SiDaisyui, SiBootstrap, SiRedux, SiFigma } from 'react-icons/si';
 import { VscVscode } from "react-icons/vsc";
 import { IoLogoFirebase } from "react-icons/io5";
 import { FaNodeJs, FaReact } from 'react-icons/fa';
@@ -27,8 +27,8 @@ const skills = [
   { name: 'GitHub', icon: SiGithub, color: '#808080' },
   { name: 'VS Code', icon: VscVscode, color: '#007acc' },
   { name: 'Figma', icon: SiFigma, color: '#f24e1e' },
-  { name: 'Socket.IO', icon: SiSocketdotio, color: '#808080' },
-  { name: 'WebRTC', icon: SiWebrtc, color: '#3333cc' },
+  // { name: 'Socket.IO', icon: SiSocketdotio, color: '#808080' },
+  // { name: 'WebRTC', icon: SiWebrtc, color: '#3333cc' },
 ];
 
 

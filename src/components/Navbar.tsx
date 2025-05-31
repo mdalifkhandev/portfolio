@@ -12,7 +12,7 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const { isDark, setIsDark } = useTheme();
-  const { isLogoAnimating, handleLogoClick } = useAnimatedLogo();
+  const { handleLogoClick } = useAnimatedLogo();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
