@@ -8,7 +8,7 @@ const education = [
     institution: 'Thakurgaon Polytechnic Institute, Thakurgaon.',
     period: '2021 - 2025',
     status:'GPA- (3.60 out of 4.00)',
-    score: '85%',
+    score: '90%',
   },
   {
     degree: 'Secondary School Certificate-(SSC)',
