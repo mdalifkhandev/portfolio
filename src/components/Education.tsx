@@ -4,7 +4,7 @@ import { EducationCard } from './ui/EducationCard';
 
 const education = [
   {
-    degree: 'Computer Science and Technology',
+    degree: 'Computer Science and Technology (Diploma)',
     institution: 'Thakurgaon Polytechnic Institute, Thakurgaon.',
     period: '2021 - 2025',
     status:'GPA- (3.60 out of 4.00)',
