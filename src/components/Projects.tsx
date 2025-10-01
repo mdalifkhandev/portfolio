@@ -4,6 +4,14 @@ import { ProjectCard } from './ui/ProjectCard';
 
 const projects = [
   {
+    title: 'Bank Management System',
+    description: 'A modern bank management system for clients and lenders, featuring credit scoring, loan management, user profiles, dashboards, and industry solutions. Built with Next.js, React, TypeScript, Zustand, React Query, and Tailwind CSS. ',
+    image: '/assets/lone.png',
+    link: 'https://lone-frontend.vercel.app/',
+    gitlink:'https://github.com/mdalifkhandev/lone-frontend',
+    tags: ["Next.js",'Tailwind CSS',"DaisyUI"," React Query"," Zustand", 'Node.js', 'MongoDB','ExpressJS',"Mongoose"],
+  },
+  {
     title: 'Fatchen Shop Copy Daraz',
     description: 'This is a fully functional e-commerce web application inspired by Daraz, designed to provide a seamless shopping experience for both men and women.  It offers a wide range of products, including electronics, fashion items, and more.',
     image: '/assets/daraz-e-comarch.png',
