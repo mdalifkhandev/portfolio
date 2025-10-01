@@ -32,9 +32,6 @@ const skills = [
   // { name: 'WebRTC', icon: SiWebrtc, color: '#3333cc' },
 ];
 
-
-
-
 export function Skills() {
   return (
     <section id="skills" className="py-20 bg-white dark:bg-gray-900">
