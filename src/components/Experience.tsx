@@ -1,20 +1,13 @@
-import React from 'react';
 import { SectionTitle } from './ui/SectionTitle';
 import { Timeline } from './ui/Timeline';
 
 const experiences = [
   {
-    title: 'MERN Stack Developer Intern',
-    company: 'Unknown It Ltd.',
-    period: 'July 2025 - Novembar 2025',
-    description: 'Developing and maintaining web applications using MERN stack. Implemented key features that improved user engagement by 40%.',
-  },
-  {
-    title: 'Web Development Lead',
-    company: 'College Tech Club',
-    period: '2024 - Present',
-    description: 'Led a team of Some developers in creating the college event management platform. Mentored junior developers in web technologies.',
-  },
+    title: 'Backend Developer Intern (Node.js)',
+    company: 'BD Calling Academy IT Ltd.',
+    period: 'September 2025 - Present',
+    description: 'Contributing to the development and maintenance of web applications using the MERN stack. Implemented core backend features and optimized APIs, resulting in improved system performance and enhanced user engagement.',
+  }
 ];
 
 export function Experience() {
