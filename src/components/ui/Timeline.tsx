@@ -44,7 +44,7 @@ export function Timeline({ items }: TimelineProps) {
               </div>
               
               {/* Description */}
-              <p className="text-gray-700 dark:text-gray-300">{item.description}</p>
+              <p className="text-gray-700 dark:text-gray-300 whitespace-pre-line">{item.description}</p>
             </div>
           </div>
         </div>

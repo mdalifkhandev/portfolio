@@ -32,12 +32,12 @@ export function ContactInfo() {
       />
       <ContactItem
         icon={<Mail className="w-5 h-5" />}
-        text="mdalifk2002@gmail.com"
-        href="mailto:mdalifk2002@gmail.com"
+        text="mdalifkhandev@gmail.com"
+        href="mailto:mdalifkhandev@gmail.com"
       />
       <ContactItem
         icon={<MapPin className="w-5 h-5" />}
-        text="Thakurgaon, Bangladesh"
+        text="Mohakhali, Dhaka, Bangladesh"
       />
     </div>
   );
