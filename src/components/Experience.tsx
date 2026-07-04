@@ -3,10 +3,16 @@ import { Timeline } from './ui/Timeline';
 
 const experiences = [
   {
-    title: 'Backend Developer Intern (Node.js)',
-    company: 'BD Calling Academy IT Ltd.',
-    period: 'September 2025 - Present',
-    description: 'Contributing to the development and maintenance of web applications using the MERN stack. Implemented core backend features and optimized APIs, resulting in improved system performance and enhanced user engagement.',
+    title: 'Jr. React Native Developer',
+    company: 'Sparktech Agency',
+    period: 'October 2025 - Present',
+    description: '• Developed and maintained web and mobile applications\n• Integrated REST APIs and managed database operations\n• Fixed bugs and improved application performance\n• Participated in client meetings and gathered requirements\n• Collaborated with team members to build client projects on time',
+  },
+  {
+    title: 'Intern/Industrial Attachment Trainee',
+    company: 'BD Calling Academy – Betopia Group',
+    period: 'September – December 2025',
+    description: '• Actively assisted in backend development using Node.js, Express.js, MongoDB, and Mongoose\n• Applied concepts of REST API design, database modelling, and Authentication/ Authorization in scalable systems.\n• Collaborated with senior developers to implement clean code and best development practices.',
   }
 ];
 
