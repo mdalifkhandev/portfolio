@@ -60,7 +60,7 @@ export function About() {
         <div className="max-w-5xl mx-auto mb-16 text-center">
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
             Hey there! 👋 I'm{" "}
-            <span className="text-blue-600 font-semibold">Md. ALif Khan</span>, i
+            <span className="text-blue-600 font-semibold">MD. SHIHAB EBNE ALIF KHAN</span>, i
             am a junior MERN stack developer with a strong foundation in modern
             web technologies. As a dedicated Software Engineer, I excel in
             developing responsive and dynamic web applications. With strong

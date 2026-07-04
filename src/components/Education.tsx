@@ -4,6 +4,13 @@ import { EducationCard } from './ui/EducationCard';
 
 const education = [
   {
+    degree: 'Bachelor of Science in Computer Science and Engineering (CSE)',
+    institution: 'Canadian University Of Bangladesh',
+    period: 'January, 2026 - Present',
+    status:'Running',
+    score: 'N/A',
+  },
+  {
     degree: 'Computer Science and Technology (Diploma)',
     institution: 'Thakurgaon Polytechnic Institute, Thakurgaon.',
     period: '2021 - 2025',
