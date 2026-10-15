@@ -4,11 +4,11 @@ import {
   SiTypescript, SiGit, SiGithub, SiVite, SiMongoose, SiMaterialdesign, SiAntdesign, 
   SiDaisyui, SiBootstrap, SiRedux, SiFigma, SiSocketdotio, SiCplusplus, SiPrisma, 
   SiPostgresql, SiPostman, SiSwagger, SiVercel, SiStripe, SiNamecheap, SiCpanel, 
-  SiExpo, SiLinux 
+  SiExpo, SiLinux, SiNestjs, SiFramer, SiJsonwebtokens, SiZod, SiCloudinary
 } from 'react-icons/si';
 import { VscVscode } from "react-icons/vsc";
 import { IoLogoFirebase } from "react-icons/io5";
-import { FaNodeJs, FaReact, FaWindows } from 'react-icons/fa';
+import { FaNodeJs, FaReact, FaAws } from 'react-icons/fa';
 import { MdApi } from 'react-icons/md';
 
 const skills = [
@@ -17,7 +17,8 @@ const skills = [
   { name: 'C++', icon: SiCplusplus, color: '#00599C' },
   { name: 'React.js', icon: FaReact, color: '#61dafb' },
   { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
-  { name: 'Redux', icon: SiRedux, color: '#764abc' },
+  { name: 'Redux Toolkit', icon: SiRedux, color: '#764abc' },
+  { name: 'Framer Motion', icon: SiFramer, color: '#0055FF' },
   { name: 'HTML5', icon: SiHtml5, color: '#e34f26' },
   { name: 'CSS3', icon: SiCss, color: '#1572b6' },
   { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#38bdf8' },
@@ -27,27 +28,29 @@ const skills = [
   { name: 'Ant Design', icon: SiAntdesign, color: '#0170fe' },
   { name: 'Node.js', icon: FaNodeJs, color: '#68a063' },
   { name: 'Express.js', icon: SiExpress, color: '#000000' },
+  { name: 'Nest.js', icon: SiNestjs, color: '#E0234E' },
   { name: 'MongoDB', icon: SiMongodb, color: '#47a248' },
   { name: 'Mongoose', icon: SiMongoose, color: '#880000' },
-  { name: 'Prisma', icon: SiPrisma, color: '#2D3748' },
   { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
+  { name: 'Prisma', icon: SiPrisma, color: '#2D3748' },
   { name: 'Socket.IO', icon: SiSocketdotio, color: '#808080' },
-  { name: 'Git', icon: SiGit, color: '#f34f29' },
-  { name: 'GitHub', icon: SiGithub, color: '#808080' },
-  { name: 'Postman', icon: SiPostman, color: '#FF6C37' },
-  { name: 'Apidog', icon: MdApi, color: '#FF5C5C' },
-  { name: 'Swagger', icon: SiSwagger, color: '#85EA2D' },
+  { name: 'JWT Auth', icon: SiJsonwebtokens, color: '#000000' },
+  { name: 'AWS (S3)', icon: FaAws, color: '#FF9900' },
   { name: 'Firebase', icon: IoLogoFirebase, color: '#ffca28' },
   { name: 'Vercel', icon: SiVercel, color: '#000000' },
+  { name: 'Cloudinary', icon: SiCloudinary, color: '#3448C5' },
+  { name: 'Zod', icon: SiZod, color: '#3E67B1' },
   { name: 'Stripe', icon: SiStripe, color: '#008CDD' },
-  { name: 'Namecheap', icon: SiNamecheap, color: '#DE3926' },
-  { name: 'cPanel', icon: SiCpanel, color: '#FF6C2C' },
+  { name: 'REST APIs', icon: MdApi, color: '#FF5C5C' },
+  { name: 'Postman', icon: SiPostman, color: '#FF6C37' },
+  { name: 'Swagger', icon: SiSwagger, color: '#85EA2D' },
+  { name: 'Git', icon: SiGit, color: '#f34f29' },
+  { name: 'GitHub', icon: SiGithub, color: '#808080' },
+  { name: 'Vite', icon: SiVite, color: '#646cff' },
   { name: 'VS Code', icon: VscVscode, color: '#007acc' },
   { name: 'Figma', icon: SiFigma, color: '#f24e1e' },
-  { name: 'Vite', icon: SiVite, color: '#646cff' },
   { name: 'React Native', icon: FaReact, color: '#61dafb' },
   { name: 'Expo', icon: SiExpo, color: '#000000' },
-  { name: 'Windows', icon: FaWindows, color: '#0078D6' },
   { name: 'Linux', icon: SiLinux, color: '#FCC624' },
 ];
 
