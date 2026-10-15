@@ -14,7 +14,7 @@ import { Analytics } from '@vercel/analytics/react';
 function App() {
   return (
     <>
-      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-opacity duration-500">
+      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-opacity duration-500 overflow-x-hidden">
         <Navbar />
         <Hero />
         <About />

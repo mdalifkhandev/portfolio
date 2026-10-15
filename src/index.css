@@ -80,12 +80,10 @@
   @apply motion-safe:animate-[floating_4s_ease-in-out_infinite];
 }
 
-/* Optimize mobile performance */
-html, body {
+/* Prevent horizontal overflow while keeping vertical scrolling intact */
+body {
   overflow-x: hidden;
   width: 100%;
-  overscroll-behavior-y: none;
-  -webkit-overflow-scrolling: touch;
 }
 
 /* Optimize images and transitions */

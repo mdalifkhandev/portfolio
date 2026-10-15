@@ -8,9 +8,9 @@ import { ActionButtons } from './hero/ActionButtons';
 
 export function Hero() {
   const roles = [
+    "Full-Stack Developer",
     "MERN-Stack Developer",
     "Problem Solver",
-    "Content Creator",
     "Lifelong Learner",
   ];
 
@@ -36,7 +36,7 @@ export function Hero() {
                 MD. SHIHAB EBNE ALIF KHAN
               </h1>
               <div className="text-xl md:text-2xl text-gray-600 dark:text-gray-300">
-                I'm a <TypeWriter words={roles} delay={100} />
+                I'm a <TypeWriter words={roles} delay={80} />
               </div>
             </div>
 

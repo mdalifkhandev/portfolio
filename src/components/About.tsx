@@ -7,9 +7,9 @@ const aboutSections = [
     icon: User2,
     title: "Who I Am",
     description: [
-      "A MERN-stack developer having interest in software engineering.",
-      "Enjoy solving problems and building scalable applications.",
-      "Always learning new technologies to improve my skills.",
+      "A Full-Stack Developer passionate about scalable software engineering.",
+      "Dedicated to solving complex problems and crafting seamless user experiences.",
+      "Continuous learner committed to clean code and modern development standards.",
     ],
     color: "bg-blue-600",
   },
@@ -17,9 +17,9 @@ const aboutSections = [
     icon: Code2,
     title: "What I Do",
     description: [
-      "Develop high-performance web apps using modern tech stacks.",
-      "Solve algorithmic problems and optimize code efficiency.",
-      "Contribute to open-source and follow industry trends.",
+      "Architect and build high-performance, full-stack web applications.",
+      "Design robust RESTful APIs, clean database models, and responsive UIs.",
+      "Solve algorithmic challenges, optimize performance, and write maintainable code.",
     ],
     color: "bg-purple-600",
   },
@@ -27,9 +27,9 @@ const aboutSections = [
     icon: GoGoal,
     title: "My Goals",
     description: [
-      "Build tech products that solve real-world challenges at scale.",
-      "Advance as a MERN-stack developer with modern frameworks.",
-      "Grow the dev community through open-source contributions.",
+      "Build impactful digital products that solve real-world problems at scale.",
+      "Advance as a versatile Full-Stack Software Engineer with cutting-edge technologies.",
+      "Contribute to open-source projects and give back to the dev community.",
     ],
     color: "bg-green-600",
   },
@@ -38,8 +38,8 @@ const aboutSections = [
     title: "My Philosophy",
     description: [
       "Technology should simplify lives, not complicate them.",
-      "Great software solves problems, not just writes code.",
-      "Continuous learning keeps you ahead in tech.",
+      "Great engineering solves problems, not just writes code.",
+      "Continuous learning is the foundation of innovation.",
     ],
     color: "bg-orange-600",
   },
@@ -60,17 +60,14 @@ export function About() {
         <div className="max-w-5xl mx-auto mb-16 text-center">
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
             Hey there! 👋 I'm{" "}
-            <span className="text-blue-600 font-semibold">MD. SHIHAB EBNE ALIF KHAN</span>, i
-            am a junior MERN stack developer with a strong foundation in modern
-            web technologies. As a dedicated Software Engineer, I excel in
-            developing responsive and dynamic web applications. With strong
-            skills in both frontend and backend development, I create seamless
-            user experiences and robust APIs. I am a quick learner, capable of
-            integrating new technologies efficiently. My GitHub showcases
-            real-world projects, reflecting my problem-solving abilities and
-            passion for innovation. i am eager to leverage their skills in
-            creating impactful web applications and contributing to innovative
-            projects.
+            <span className="text-blue-600 font-semibold">MD. SHIHAB EBNE ALIF KHAN</span>, a
+            passionate Full-Stack Developer with a solid foundation in modern
+            web technologies. I specialize in building responsive, user-friendly
+            frontend interfaces and scalable backend architectures with robust
+            RESTful APIs. With a strong focus on clean code and efficient problem-solving,
+            I love turning complex challenges into seamless digital experiences.
+            Always curious and eager to learn, I am excited to contribute to
+            impactful products and work with innovative teams.
           </p>
 
           <div className="mt-6 flex justify-center">
