@@ -15,25 +15,41 @@ export function Navbar() {
   const { handleLogoClick } = useAnimatedLogo();
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
 
-  useEffect(() => {
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleSection = entries.find((entry) => entry.isIntersecting);
-        if (visibleSection) {
-          setActiveSection(visibleSection.target.id);
+      const sections = document.querySelectorAll('section[id]');
+      const triggerLine = 200; // Trigger line from top of viewport
+
+      // Check if user is near the bottom of the page
+      const isAtBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 60;
+
+      if (isAtBottom && sections.length > 0) {
+        const lastSection = sections[sections.length - 1];
+        if (lastSection?.id) {
+          setActiveSection(lastSection.id);
+          return;
         }
-      },
-      { threshold: 0.5 }
-    );
+      }
 
-    sections.forEach((section) => observer.observe(section));
-    return () => sections.forEach((section) => observer.unobserve(section));
+      for (let i = 0; i < sections.length; i++) {
+        const section = sections[i];
+        const rect = section.getBoundingClientRect();
+
+        // Check if section is currently overlapping the trigger line
+        if (rect.top <= triggerLine && rect.bottom >= triggerLine) {
+          if (section.id) {
+            setActiveSection(section.id);
+          }
+          break;
+        }
+      }
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const toggleTheme = () => {
