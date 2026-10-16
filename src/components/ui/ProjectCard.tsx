@@ -13,6 +13,7 @@ interface ProjectCardProps {
   tags: string[];
 }
 
+
 export function ProjectCard({
   title,
   description,
@@ -50,9 +51,8 @@ export function ProjectCard({
           <img
             src={image}
             alt={title}
-            className={`relative z-10 w-full h-full ${
-              isPortraitImage ? 'object-contain py-2 drop-shadow-lg' : 'object-cover object-top'
-            } transform transition-transform duration-500 group-hover:scale-105`}
+            className={`relative z-10 w-full h-full ${isPortraitImage ? 'object-contain py-2 drop-shadow-lg' : 'object-cover object-top'
+              } transform transition-transform duration-500 group-hover:scale-105`}
             loading="lazy"
           />
 
