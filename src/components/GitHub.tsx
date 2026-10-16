@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import GitHubCalendar from "react-github-calendar";
 import { SectionTitle } from "./ui/SectionTitle";
 import { Github } from "lucide-react";
@@ -28,23 +28,29 @@ export function GitHub() {
 
     useEffect(() => {
         fetch("https://api.github.com/users/mdalifkhandev")
-            .then((response) => response.json())
-            .then((data: UserProfile) => setUser(data));
+            .then((response) => response.ok ? response.json() : null)
+            .then((data: UserProfile | null) => {
+                if (data && data.name) setUser(data);
+            })
+            .catch(() => {});
 
         fetch("https://api.github.com/users/mdalifkhandev/repos?sort=pushed&direction=desc&per_page=3")
-            .then((response) => response.json())
-            .then((data) =>
-                setRepos(
-                    data.map((repo: any) => ({
-                        name: repo.name,
-                        description: repo.description || "No description available",
-                        stars: repo.stargazers_count,
-                        forks: repo.forks,
-                        language: repo.language || "Unknown",
-                        html_url: repo.html_url,
-                    }))
-                )
-            );
+            .then((response) => response.ok ? response.json() : [])
+            .then((data) => {
+                if (Array.isArray(data)) {
+                    setRepos(
+                        data.map((repo: any) => ({
+                            name: repo.name,
+                            description: repo.description || "No description available",
+                            stars: repo.stargazers_count || 0,
+                            forks: repo.forks || 0,
+                            language: repo.language || "Unknown",
+                            html_url: repo.html_url,
+                        }))
+                    );
+                }
+            })
+            .catch(() => {});
     }, []);
 
     return (

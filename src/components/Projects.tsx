@@ -1,57 +1,86 @@
-
 import { SectionTitle } from './ui/SectionTitle';
 import { ProjectCard } from './ui/ProjectCard';
 
-const projects = [
+interface ProjectData {
+  title: string;
+  description: string;
+  image: string;
+  link?: string;
+  gitlink?: string;
+  playStore?: string;
+  appStore?: string;
+  isPortrait?: boolean;
+  tags: string[];
+}
+
+const projects: ProjectData[] = [
+  {
+    title: 'Phixels Ecosystem (Full-Stack SaaS)',
+    description: 'A scalable full-stack SaaS platform featuring a dynamic landing page, client dashboard, custom CMS with Tiptap rich-text editor, JWT authentication, Zod validation, and Cloudinary media management.',
+    image: '/assets/phixels.png',
+    link: 'https://phixels.agency/',
+    gitlink: 'https://github.com/mdalifkhandev/phixels-web',
+    tags: ['React', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Framer Motion', 'Cloudinary', 'Zod'],
+  },
+  {
+    title: 'Hiruu App (Job Marketplace & Workforce Management)',
+    description: 'A cross-platform mobile application bridging employers and job seekers with real-time shift scheduling, live messaging via WebSockets, QR code attendance tracking, and push notifications.',
+    image: '/assets/hiruu.png',
+    gitlink: 'https://github.com/mdalifkhandev/Hiruu.git',
+    playStore: 'https://play.google.com/store/apps/details?id=app.hiruu',
+    appStore: 'https://apps.apple.com/gr/app/hiruu/id6780495511',
+    isPortrait: true,
+    tags: ['React Native', 'Expo', 'Redux Toolkit', 'Node.js', 'Express.js', 'MongoDB', 'WebSockets', 'JWT'],
+  },
   {
     title: 'Bank Management System',
-    description: 'A modern bank management system for clients and lenders, featuring credit scoring, loan management, user profiles, dashboards, and industry solutions. Built with Next.js, React, TypeScript, Zustand, React Query, and Tailwind CSS. ',
+    description: 'A modern financial platform for clients and lenders featuring credit scoring, loan management, real-time analytics dashboards, and enterprise solutions.',
     image: '/assets/lone.png',
     link: 'https://lone-frontend.vercel.app/',
-    gitlink:'https://github.com/mdalifkhandev/lone-frontend',
-    tags: ["Next.js",'Tailwind CSS',"DaisyUI"," React Query"," Zustand", 'Node.js', 'MongoDB','ExpressJS',"Mongoose"],
+    gitlink: 'https://github.com/mdalifkhandev/lone-frontend',
+    tags: ['Next.js', 'React', 'TypeScript', 'Zustand', 'React Query', 'Tailwind CSS', 'Node.js', 'MongoDB', 'Express.js', 'Mongoose'],
   },
   {
-    title: 'Fatchen Shop Copy Daraz',
-    description: 'This is a fully functional e-commerce web application inspired by Daraz, designed to provide a seamless shopping experience for both men and women.  It offers a wide range of products, including electronics, fashion items, and more.',
+    title: 'Fashion E-Commerce (Daraz Clone)',
+    description: 'A full-featured e-commerce web application inspired by Daraz, featuring multi-category product catalog, cart system, user authentication, and responsive design.',
     image: '/assets/daraz-e-comarch.png',
     link: 'https://daraz-e-comarch.web.app/',
-    gitlink:'https://github.com/mdalifkhandev/daraz-e-comarch-clain.git',
-    tags: ['React', 'Node.js', 'Tailwind CSS','MongoDB','ExpressJS',"Firebase","DaisyUI"],
+    gitlink: 'https://github.com/mdalifkhandev/daraz-e-comarch-clain.git',
+    tags: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Firebase', 'DaisyUI'],
   },
   {
-    title: 'Fitness Equipment sales and services',
-    description: 'This is a dynamic full-stack web application built for selling fitness equipment and offering maintenance services. It provides a user-friendly interface for browsing products .',
+    title: 'Fitness Equipment Sales & Services',
+    description: 'A dynamic full-stack web application designed for selling fitness gear and booking maintenance services with an intuitive user interface and product browsing.',
     image: '/assets/fitness-equipment.png',
     link: 'https://fitness-equipment.vercel.app',
-    gitlink:'https://github.com/mdalifkhandev/fitness-equipment.git',
-    tags: ['React', 'Node.js', 'Tailwind CSS','MongoDB','ExpressJS',"Typescript",'vite',"Antd Design"],
+    gitlink: 'https://github.com/mdalifkhandev/fitness-equipment.git',
+    tags: ['React', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Vite', 'Ant Design'],
   },
   {
-    title: 'Flight Ticket Application',
-    description: 'This is a responsive and modern frontend travel booking user interface, designed to provide a smooth user experience for searching and booking flights, hotels, and tour packages. ',
+    title: 'Flight Ticket Booking Application',
+    description: 'A responsive and modern travel booking user interface designed for smooth search, flight comparison, and reservation workflows for flights and hotels.',
     image: '/assets/flight-ticket.png',
     link: 'https://flight-taiket.vercel.app/',
-    gitlink:'https://github.com/mdalifkhandev/flight-taiket',
-    tags: ['React', 'Node.js', 'Tailwind CSS','Redux','Antd Design'],
+    gitlink: 'https://github.com/mdalifkhandev/flight-taiket',
+    tags: ['React', 'Redux Toolkit', 'Tailwind CSS', 'Node.js', 'Ant Design'],
   },
   {
-    title: 'Portfolio',
-    description: 'A personal portfolio website showcasing projects, skills, and accomplishments, highlighting expertise in web development and design.',
+    title: 'Developer Portfolio',
+    description: 'A high-performance personal portfolio built with React, Vite, and Tailwind CSS showcasing projects, technical skills, and engineering background.',
     image: '/assets/portfolio.png',
-    link: '/',
-    gitlink:'',
-    tags: ['React', 'Tailwind CSS', 'Node.js'],
+    link: 'https://mdalifkhan.vercel.app/',
+    gitlink: 'https://github.com/mdalifkhandev/portfolio',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vite'],
   },
 ];
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
-      <div className="container mx-auto px-8">
-        <SectionTitle>Projects</SectionTitle>
+    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800/50 transition-colors duration-300">
+      <div className="container mx-auto px-6 md:px-12 max-w-7xl">
+        <SectionTitle>Featured Projects</SectionTitle>
         
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}

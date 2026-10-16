@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { ArrowDown } from 'lucide-react';
 import { Link } from './Link';
 import { TypeWriter } from './ui/TypeWriter';
